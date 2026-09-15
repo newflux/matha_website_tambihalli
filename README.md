@@ -1,32 +1,23 @@
-# React + TypeScript + Vite
+# Sriman Madhava Teertha Matha Tambihalli - Official Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+This is the official GitHub repository for the Sriman Madhava Teertha Matha, Tambihalli website.
 
-Currently, two official plugins are available:
+## About
+A sacred institution of devotion, Seva, and spiritual guidance, rooted in the ancient Dvaita Vedanta tradition. This digital platform allows devotees to book Seva, offer Kanike, and receive Prasadam.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Peethadhipathi
+**His Holiness Vidhyavallabha Madhava Teertharu**
 
-## React Compiler
+## Tech Stack
+- React
+- Vite
+- TypeScript
+- Vanilla CSS (Custom Design System)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+## Local Development
+```bash
+npm install
+npm run dev
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+© 2026 Sriman Madhava Teertha Matha Tambihalli. All Rights Reserved.
