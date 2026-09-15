@@ -1,0 +1,427 @@
+/* ==========================================================
+   Sriman Madhava Teertha Matha Tambihalli — Official Site
+   Palette: Cream White, Brick Red, Aged Gold accents
+   Fonts: Cinzel (headings) + EB Garamond (body)
+========================================================== */
+
+:root {
+  --red:          #8B2112;   /* Primary brick red */
+  --red-deep:     #6B1a0e;   /* Deeper for borders/hover */
+  --red-light:    #c04030;   /* Lighter accent */
+  --cream:        #FBF7F0;   /* Main background */
+  --cream-dark:   #F0E9DC;   /* Section dividers */
+  --gold:         #C4962A;   /* Subtle line/ornament gold */
+  --text-body:    #2a1a10;   /* Main dark text */
+  --text-muted:   #6b5a4a;   /* Secondary text */
+  --white:        #FFFFFF;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'EB Garamond', Georgia, serif;
+  background-color: var(--cream);
+  color: var(--text-body);
+  font-size: 17px;
+  line-height: 1.8;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, .cinzel {
+  font-family: 'Cinzel', 'Times New Roman', serif;
+  letter-spacing: 0.05em;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* ──────────────────────────────────────────
+   TOP ORNAMENT STRIP
+────────────────────────────────────────── */
+.top-strip {
+  width: 100%;
+  background-color: var(--red);
+  height: 6px;
+}
+
+/* ──────────────────────────────────────────
+   NAVIGATION
+────────────────────────────────────────── */
+.main-nav {
+  background-color: var(--white);
+  border-bottom: 1px solid var(--cream-dark);
+  padding: 1.1rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.07);
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.nav-logo-img {
+  height: 48px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+  transition: opacity 0.2s ease;
+}
+
+.nav-brand:hover .nav-logo-img {
+  opacity: 0.85;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.nav-link {
+  font-family: 'Cinzel', serif;
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  transition: color 0.2s ease;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 2px;
+}
+
+.nav-link:hover {
+  color: var(--red);
+  border-bottom-color: var(--red);
+}
+
+/* ──────────────────────────────────────────
+   HERO SECTION
+────────────────────────────────────────── */
+.hero {
+  background-color: var(--white);
+  padding: 2rem 2rem 1.5rem;
+  text-align: center;
+  border-bottom: 1px solid var(--cream-dark);
+}
+
+.hero-ornament {
+  font-size: 1.5rem;
+  color: var(--gold);
+  letter-spacing: 0.5rem;
+  display: block;
+  margin-bottom: 1rem;
+  opacity: 0.75;
+}
+
+.hero-title {
+  font-family: 'Cinzel', serif;
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  font-weight: 700;
+  color: var(--red);
+  line-height: 1.15;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.hero-subtitle {
+  font-family: 'Cinzel', serif;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  font-weight: 400;
+  color: var(--red-deep);
+  letter-spacing: 0.15em;
+  margin-top: 0.4rem;
+  text-transform: uppercase;
+  opacity: 0.75;
+}
+
+.hero-divider {
+  width: 100px;
+  height: 2px;
+  background: linear-gradient(to right, transparent, var(--gold), transparent);
+  margin: 1.5rem auto;
+}
+
+.hero-tagline {
+  font-style: italic;
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 1.5rem auto 0;
+}
+
+/* swamy frame & image now live inside .hero */
+
+/* swamy layout inside hero */
+.swamy-frame {
+  position: relative;
+  border: 4px solid var(--gold);
+  box-shadow:
+    0 0 0 8px var(--white),
+    0 0 0 12px var(--red),
+    0 12px 48px rgba(139, 33, 18, 0.2);
+  width: fit-content;
+  margin: 1.5rem auto 0;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.swamy-frame:hover {
+  transform: translateY(-6px);
+  box-shadow:
+    0 0 0 8px var(--cream),
+    0 0 0 12px var(--red),
+    0 24px 60px rgba(139, 33, 18, 0.3);
+}
+
+.swamy-img {
+  width: min(520px, 90vw);
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.swamy-caption {
+  font-family: 'EB Garamond', serif;
+  font-style: italic;
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  margin-top: 2rem;
+  text-align: center;
+  letter-spacing: 0.04em;
+  line-height: 1.7;
+}
+
+.swamy-caption strong {
+  color: var(--red);
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+/* ──────────────────────────────────────────
+   APP DOWNLOAD SECTION
+────────────────────────────────────────── */
+.app-section {
+  background-color: var(--red-deep);
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.app-section-heading {
+  font-family: 'Cinzel', serif;
+  font-size: 1.4rem;
+  color: var(--cream);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 0.6rem;
+}
+
+.app-section-text {
+  color: rgba(251, 247, 240, 0.7);
+  font-size: 1rem;
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+
+.app-badge-link {
+  display: inline-block;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.app-badge-link:hover {
+  transform: translateY(-3px);
+  filter: brightness(1.15);
+}
+
+.app-badge-img {
+  height: 52px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* ──────────────────────────────────────────
+   FOOTER
+────────────────────────────────────────── */
+.footer {
+  background-color: var(--red);
+  padding: 2rem 3rem;
+  text-align: center;
+}
+
+.footer-text {
+  font-family: 'Cinzel', serif;
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  color: rgba(251, 247, 240, 0.8);
+  text-transform: uppercase;
+}
+
+.footer-links {
+  margin-top: 0.6rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.footer-link {
+  font-size: 0.8rem;
+  color: rgba(251, 247, 240, 0.65);
+  letter-spacing: 0.05em;
+  transition: color 0.2s ease;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 1px;
+}
+
+.footer-link:hover {
+  color: var(--cream);
+  border-bottom-color: var(--cream);
+}
+
+/* ──────────────────────────────────────────
+   PRIVACY POLICY PAGE
+────────────────────────────────────────── */
+.policy-page {
+  background-color: var(--cream);
+  min-height: calc(100vh - 80px);
+}
+
+.policy-header {
+  background-color: var(--white);
+  border-bottom: 1px solid var(--cream-dark);
+  padding: 3.5rem 2rem 2.5rem;
+  text-align: center;
+}
+
+.policy-header-ornament {
+  color: var(--gold);
+  letter-spacing: 0.6rem;
+  font-size: 1.1rem;
+  opacity: 0.7;
+  display: block;
+  margin-bottom: 0.8rem;
+}
+
+.policy-title {
+  font-family: 'Cinzel', serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--red);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.policy-date {
+  font-style: italic;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-top: 0.5rem;
+}
+
+.policy-body {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 3rem 2rem 4rem;
+}
+
+.policy-section {
+  margin-bottom: 2.5rem;
+}
+
+.policy-section-title {
+  font-family: 'Cinzel', serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--red);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 1rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--cream-dark);
+}
+
+.policy-text {
+  color: var(--text-body);
+  margin-bottom: 0.8rem;
+  line-height: 1.85;
+}
+
+.policy-list {
+  list-style: none;
+  margin-top: 0.8rem;
+}
+
+.policy-list li {
+  position: relative;
+  padding-left: 1.6rem;
+  margin-bottom: 0.8rem;
+  color: var(--text-body);
+  line-height: 1.8;
+}
+
+.policy-list li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--red);
+  font-weight: 500;
+}
+
+/* ──────────────────────────────────────────
+   UTILITIES & ANIMATIONS
+────────────────────────────────────────── */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  animation: fadeUp 0.7s ease-out both;
+}
+
+/* ──────────────────────────────────────────
+   RESPONSIVE
+────────────────────────────────────────── */
+@media (max-width: 640px) {
+  .main-nav {
+    padding: 0.8rem 1.2rem;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+  .swamy-img {
+    width: min(340px, 88vw);
+  }
+  .policy-body {
+    padding: 2rem 1.2rem;
+  }
+}
