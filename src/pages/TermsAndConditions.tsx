@@ -113,7 +113,7 @@ const TermsAndConditions: React.FC = () => {
           <ul className="policy-list" style={{ listStyleType: 'none', paddingLeft: 0 }}>
             <li><strong>Email:</strong> srimanmadhavateertharamatha@gmail.com</li>
             <li><strong>Phone:</strong> +91 9011397283, +91 70194 29651</li>
-            <li><strong>Address:</strong> Sri Madhava Teertha Matha, Tambihalli, Tq: Chincholi, Dist: Kalaburagi, Karnataka-585306</li>
+            <li><strong>Address:</strong> Sri Madhava Teertha Matha, Tambihalli, Kolar, Karnataka - 563101</li>
           </ul>
         </section>
       </div>
