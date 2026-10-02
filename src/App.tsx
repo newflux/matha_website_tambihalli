@@ -1,6 +1,7 @@
 import { Routes, Route, Link } from 'react-router-dom';
 import LandingPage from './pages/LandingPage';
 import PrivacyPolicy from './pages/PrivacyPolicy';
+import TermsAndConditions from './pages/TermsAndConditions';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <div className="nav-links">
           <Link to="/" className="nav-link">Home</Link>
           <Link to="/privacypolicy" className="nav-link">Privacy Policy</Link>
+          <Link to="/terms" className="nav-link">Terms and Conditions</Link>
         </div>
       </nav>
 
@@ -24,6 +26,7 @@ function App() {
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/privacypolicy" element={<PrivacyPolicy />} />
+          <Route path="/terms" element={<TermsAndConditions />} />
         </Routes>
       </main>
 
@@ -32,6 +35,7 @@ function App() {
         <p className="footer-text">© 2026 Sriman Madhava Teertha Matha Tambihalli. All Rights Reserved.</p>
         <div className="footer-links">
           <Link to="/privacypolicy" className="footer-link">Privacy Policy</Link>
+          <Link to="/terms" className="footer-link">Terms & Conditions</Link>
         </div>
       </footer>
     </div>
