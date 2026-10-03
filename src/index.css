@@ -372,20 +372,11 @@ img {
 }
 
 .policy-list li {
-  position: relative;
-  padding-left: 1.6rem;
   margin-bottom: 0.8rem;
   color: var(--text-body);
   line-height: 1.8;
 }
 
-.policy-list li::before {
-  content: '—';
-  position: absolute;
-  left: 0;
-  color: var(--red);
-  font-weight: 500;
-}
 
 /* ──────────────────────────────────────────
    UTILITIES & ANIMATIONS
