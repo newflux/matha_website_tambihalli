@@ -2,6 +2,7 @@ import { Routes, Route, Link } from 'react-router-dom';
 import LandingPage from './pages/LandingPage';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsAndConditions from './pages/TermsAndConditions';
+import ResetPassword from './pages/ResetPassword';
 
 function App() {
   return (
@@ -27,6 +28,9 @@ function App() {
           <Route path="/" element={<LandingPage />} />
           <Route path="/privacypolicy" element={<PrivacyPolicy />} />
           <Route path="/terms" element={<TermsAndConditions />} />
+          <Route path="/reset-password" element={<ResetPassword />} />
+          <Route path="/resetpassword" element={<ResetPassword />} />
+          <Route path="/reset-password.html" element={<ResetPassword />} />
         </Routes>
       </main>
 
