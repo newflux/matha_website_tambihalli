@@ -3,6 +3,7 @@ import LandingPage from './pages/LandingPage';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsAndConditions from './pages/TermsAndConditions';
 import ResetPassword from './pages/ResetPassword';
+import DataDeletion from './pages/DataDeletion';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
           <Route path="/reset-password" element={<ResetPassword />} />
           <Route path="/resetpassword" element={<ResetPassword />} />
           <Route path="/reset-password.html" element={<ResetPassword />} />
+          <Route path="/data-deletion" element={<DataDeletion />} />
         </Routes>
       </main>
 
@@ -40,6 +42,7 @@ function App() {
         <div className="footer-links">
           <Link to="/privacypolicy" className="footer-link">Privacy Policy</Link>
           <Link to="/terms" className="footer-link">Terms & Conditions</Link>
+          <Link to="/data-deletion" className="footer-link">Data Deletion</Link>
         </div>
       </footer>
     </div>
