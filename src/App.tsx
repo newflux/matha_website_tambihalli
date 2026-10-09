@@ -4,6 +4,7 @@ import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsAndConditions from './pages/TermsAndConditions';
 import ResetPassword from './pages/ResetPassword';
 import DataDeletion from './pages/DataDeletion';
+import NotFound from './pages/NotFound';
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
           <Route path="/resetpassword" element={<ResetPassword />} />
           <Route path="/reset-password.html" element={<ResetPassword />} />
           <Route path="/data-deletion" element={<DataDeletion />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
 
